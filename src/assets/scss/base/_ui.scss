@@ -88,6 +88,7 @@ main {
     text-align: center;
     padding: 12px 32px;
     border-radius: 30px;
+    height: fit-content;
 
     i {
         margin-right: 10px;
@@ -105,7 +106,10 @@ main {
     color: #3D3D3D;
 }
 
-
+.button-style.button-style--white {
+    background: #F5F5F5;
+    color: #00652D;
+}
 
 .container {
     margin: 0 auto;
