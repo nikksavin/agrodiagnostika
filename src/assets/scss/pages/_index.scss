@@ -1,0 +1,376 @@
+
+.banner {
+    margin-top: 16px;
+
+    .swiper-pagination-bullet {
+        background: #00652D;
+        opacity: 1;
+        width: 6px;
+        height: 6px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #ED6D00;
+    }
+}
+.container {
+}
+.banner__slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.banner__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 30px;
+    padding-top: 30px;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.banner__slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 248px;
+
+    @include breakpoint(md) {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-bottom: 55px;
+        max-width: 381px;
+    }
+
+}
+.banner__slide-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #3D3D3D;
+
+    @include breakpoint(md) {
+        text-align: left;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+}
+.banner__slide-text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #3D3D3D;
+    margin-top: 12px;
+    margin-bottom: 23px;
+
+    @include breakpoint(md) {
+        text-align: left;
+    }
+}
+.banner__slide-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #00652D;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 248px;
+    width: 100%;
+
+    @include breakpoint(md) {
+        max-width: 183px;
+        margin-right: auto;
+    }
+
+}
+.banner__slide-img {
+    margin-bottom: -39px;
+    max-width: 75%;
+    margin-top: 10px;
+    margin-left: 25px;
+
+
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+
+}
+.banner__slider-pagination {
+    position: relative;
+    bottom: 0!important;
+
+    @include breakpoint(md) {
+        display: none;
+    }
+
+}
+.swiper-arrows {
+    display: none;
+
+    @include breakpoint(md) {
+        display: flex;
+        position: absolute;
+        top: 45%;
+        z-index: 11111;
+        width: 97%;
+        justify-content: space-between;
+    }
+
+}
+.arrow {
+    filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.06));
+    width:  40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    background-color: #fff;
+    align-items: center;
+    justify-self: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.production {
+    margin-top: 65px;
+    padding-bottom: 50px;
+
+    @include breakpoint(lg) {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.container {
+}
+
+.section-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        font-size: 28px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(xl) {
+        
+    }
+
+}
+
+.production-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.production-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        border-bottom: none;
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.production-item__img {
+
+    border-radius: 20px;
+
+    img {
+
+
+        @include breakpoint(md) {
+            object-fit: cover;
+        }
+
+    }
+
+    @include breakpoint(md) {
+        width: 50%;
+        margin-right: 20px;
+        max-height: 220px;
+        overflow: hidden;
+    }
+
+    @include breakpoint(lg) {
+        width: 30%;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 40px;
+    }
+
+
+
+}
+.production-item__content {
+    padding-top: 20px;
+
+    @include breakpoint(md) {
+        width: 50%;
+        border-top: 1px solid #D9D9D9;
+    }
+
+    @include breakpoint(lg) {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+.production-item__info {
+    @include breakpoint(lg) {
+        max-width: 375px;
+    }
+    @include breakpoint(xl) {
+        max-width: 470px;
+    }
+}
+
+
+.production-item__title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 15px;
+}
+.production-item__text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+}
+
+.production-item__btns {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .button-style {
+        width: 100%;
+        margin-bottom: 10px;
+      
+
+        @include breakpoint(md) {
+            margin-bottom: 0;
+            margin-right: 10px;
+            width: calc( 50% - 5px );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include breakpoint(lg) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+
+
+}
+
+
+
+
+.services {
+}
+.container {
+}
+.section-title {
+}
+.services-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.services-item__img {
+}
+.services-item__content {
+}
+.services-item__text {
+}
