@@ -111,6 +111,67 @@ main {
     color: #00652D;
 }
 
+
+ul {
+    list-style: disc;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+    li {
+        list-style-type: circle;
+        margin-bottom: 12px;
+
+        &::marker {
+            color: #ED6D00;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+.page__content h2 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3D3D3D;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 28px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 32px;
+    }
+
+}
+
+.page__content a {
+    color: #00652D;
+    font-weight: 700;
+}
+
+
 .container {
     margin: 0 auto;
     padding: 0 16px;

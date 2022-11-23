@@ -1,6 +1,13 @@
 .footer {
+    padding-top: 40px;
+
+    @include breakpoint(lg) {
+        padding-top: 60px;
+    }
+
     @include breakpoint(xl) {
         padding-bottom: 50px;
+        padding-top: 80px;
     }
 }
 .footer-nav {

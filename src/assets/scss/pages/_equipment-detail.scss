@@ -1,0 +1,295 @@
+.equipment-detail {
+}
+.container {
+}
+.equipment-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.equipment-detail-top {
+    display: flex;
+    flex-direction: column;
+
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
+
+
+}
+.equipment-detail__img {
+
+    @include breakpoint(md) {
+        max-width: 564px;
+        max-height: 564px;
+    }
+
+    @include breakpoint(lg) {
+        width: 50%;
+    }
+
+}
+.equipment-detail__content {
+    margin-top: 20px;
+
+
+    p {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D3D3D;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: disc;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        li {
+            list-style-type: circle;
+            margin-bottom: 12px;
+
+            &::marker {
+                color: #ED6D00;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(xl) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .button-style {
+        @include breakpoint(md) {
+            width: fit-content;
+        }
+    }
+
+
+    @include breakpoint(md) {
+        max-width: 70%;
+    }
+
+    @include breakpoint(lg) {
+        width: 50%;
+        margin-left: 30px;
+    }
+
+}
+.inner-page-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 15px;
+
+    @include breakpoint(md) {
+        font-size: 26px;
+    }
+
+}
+.equipment-detail__advantages-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 15px;
+
+    @include breakpoint(md) {
+        font-size: 22px;
+    }
+
+}
+
+.equipment-detail-middle {
+    margin-top: 50px;
+}
+.equipment-detail-files {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(md) {
+        margin-left: -20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: -30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: -40px;
+    }
+}
+.equipment-detail__file {
+    display: flex;
+    flex-direction: row;
+    background: #F5F5F5;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+    @include breakpoint(lg) {
+        width: calc( 100% / 4 - 30px);
+        margin-left: 30px;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    @include breakpoint(xl) {
+        flex-direction: row;
+        width: calc( 100% / 4 - 40px);
+        margin-left: 40px;
+    }
+
+
+}
+.equipment-detail__file-icon {
+    min-width: 41px;
+    min-height: 44px;
+    max-width: 41px;
+    max-height: 44px;
+}
+.equipment-detail__file-title {
+    margin-left: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+
+    @include breakpoint(lg) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+}
+.equipment-detail-bottom {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 100px;
+    }
+
+}
+.equipment-detail-bottom__title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+}
+.equipment-detail-chars {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3D3D3D;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #e0e0e0;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    thead td {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3D3D3D;
+    }
+
+    td {
+        border: 1px solid #E0E0E0;
+        border-collapse: collapse;
+        border-color: #E0E0E0;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3D3D3D;
+        padding: 10px 10px;
+
+        @include breakpoint(md) {
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+
+    }
+}
+.tr_odd {
+}
+
+.equipment-inner  {
+    margin-top: 50px;
+    @include breakpoint(md) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 100px;
+    }
+}

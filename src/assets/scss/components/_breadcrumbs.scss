@@ -2,23 +2,15 @@
     display: none;
 
     @include breakpoint(md) {
-        padding: 20px 0 50px;
+        padding: 30px 0 0;
         display: block;
     }
 
-    @include breakpoint(lg) {
-        padding: 20px 0 55px;
-    }
-
     @include breakpoint(xl) {
-        padding: 20px 0 70px;
+        padding: 30px 0 0;
     }
 
-    @include breakpoint(hd) {
-        padding: 30px 0 75px;
-    }
 }
-
 .breadcrumbs-wrapper {
     display: none;
 
@@ -29,37 +21,41 @@
 }
 
 .breadcrumbs-item {
+    font-family: 'Noto Sans';
+    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    color: gray;
-
-    @include breakpointMax(xl) {
-        max-width: 360px;
-        @include textLimit(1);
-    }
+    font-size: 16px;
+    line-height: 150%;
+    color: #7F7F7F;
 }
-
 .breadcrumbs-separator {
-    margin: 0 22px;
-    display: inline-block;
+
+    padding: 0 15px;
+
+    i {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        font-size: 11px;
+    }
 }
 
-.s-title {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 140%;
-    color: #000;
-    text-transform: uppercase;
+.title {
 
-    @include breakpointMax(md) {
+    .page-title {
+        margin-bottom: 20px;
         margin-top: 20px;
+
+        
+        @include breakpoint(md) {
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+
+        @include breakpoint(xl) {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
     }
 
-    @include breakpoint(md) {
-        font-size: 38px;
-    }
-
-    @include breakpoint(hd) {
-        font-size: 50px;
-    }
 }

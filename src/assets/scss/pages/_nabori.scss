@@ -1,0 +1,226 @@
+.sets {
+}
+.container {
+}
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(xl) {
+        flex-direction: row;
+    }
+}
+.page__sidebar {
+    width: 100%;
+    padding-top: 15px;
+
+
+    @include breakpoint(xl) {
+        width: 270px;
+        margin-right: 40px;
+    }
+
+}
+
+.page__sidebar--selected {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #00652D;
+    padding: 10px 15px;
+    background-color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    i {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #3D3D3D;
+    }
+
+    @include breakpoint(md) {
+        display: none;
+    }
+
+}
+
+.page__sidebar-nav {
+    background: #F5F5F5;
+    border-radius: 15px;
+    padding: 10px;
+
+    @include breakpoint(md) {
+        background: none;
+        border-radius: none;
+        padding: 0;
+    }
+
+
+}
+.page__sidebar-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+    .select-option.selected {
+        background-color: #fff;
+        border-radius: 15px;
+        color: #00652D;
+    }
+
+
+    @include breakpoint(md) {
+        display: flex!important;
+        flex-wrap: wrap;
+        margin-top: 0;
+        flex-direction: unset;
+        background: #F5F5F5;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    @include breakpoint(xl) {
+        flex-direction: column;
+    }
+
+}
+
+.page__sidebar-list a {
+  width: 100%;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+    text-align: left;   
+    padding: 10px 0;
+
+    @include breakpoint(md) {
+        width: calc(100% / 3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    @include breakpoint(xl) {
+        width: 100%;
+        text-align: left;
+        justify-content: unset;
+        padding: 20px;
+    }
+
+}
+
+.page__content {
+    width: 100%;
+    margin-top: 20px;
+
+    p {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D3D3D;
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint(xl) {
+        width: calc( 100% - 310px );
+    }
+
+}
+.page-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        font-size: 28px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 32px;
+    }
+
+}
+.tablepcr {
+    // display: none;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #e0e0e0;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+    td {
+        border: 1px solid #E0E0E0;
+        border-collapse: collapse;
+        border-color: #E0E0E0;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+        color: #3D3D3D;
+        padding: 10px 10px;
+
+        @include breakpoint(md) {
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+
+    }
+
+    td.headerlevelone {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 150%;
+        color: #FFFFFF;
+        background: #00652D;
+
+        @include breakpoint(md) {
+            font-size: 18px;
+        }
+
+    }
+    
+    td img {
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin: 0 auto;
+    }
+
+   
+
+}
+
+.tr_odd {
+    background: #F5F5F5;
+}
