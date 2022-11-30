@@ -111,3 +111,29 @@ block footer
                         span Di-Project.Studio
 
                 
+    .site__popup.white-popup.mfp-hide#popup   
+        .contacts__form
+            form(action="")
+                .contacts__form-left
+                    .contacts__form-img 
+                        img(src="assets/images/popupbg.png", alt="")
+                .contacts__form-right
+                    .contacts__form-title Оставьте заявку, и мы с вами свяжемся в ближайшее время
+                    label(for="").contacts__form-label
+                        input(type="text" placeholder="Имя").contacts__form-input
+                    label(for="").contacts__form-label
+                        input(type="text" placeholder="Телефон").contacts__form-input
+                    label(for="").contacts__form-label
+                        textarea(placeholder="Телефон", cols="30", rows="10").contacts__form-textarea
+                    .site__popup-btns
+                        button(type="submit").button-style.button-style--white Оставить заявку
+                        .custom-checkbox
+                            input(type="checkbox" checked)#check
+                            label(for="check") Согласен (на) на обработку персональный данных
+                            span.checkbox
+            .site__popup-success.hide
+                .site__popup-success-img
+                    img(src="assets/images/popupsucces.png", alt="")
+                .site__popup-success-content
+                    .site__popup-success-title Спасибо за заявку!
+                    .site__popup-success-text Мы свяжемся с вами в ближайшее время

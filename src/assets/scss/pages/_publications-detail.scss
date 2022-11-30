@@ -1,0 +1,27 @@
+.publication-detail__date {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #00652D;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+}
+
+.publication-detail__img {
+    margin-bottom: 20px;
+
+
+    @include breakpoint(md) {
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 40px;
+    }
+
+}

@@ -1,0 +1,90 @@
+---
+title: АгроДиагностика | Новости детальная
+---
+
+extends includes/_page
+
+block main
+
+
+    section.breadcrumbs
+        .container 
+            .breadcrumbs-wrapper
+                .breadcrumbs-item
+                    a Главная
+                .breadcrumbs-separator
+                    i.fa-solid.fa-chevron-right
+                .breadcrumbs-item
+                    a Новости
+                .breadcrumbs-separator
+                    i.fa-solid.fa-chevron-right
+                .breadcrumbs-item
+                    a Новости детальная
+
+
+    section.news-detail 
+
+        .container 
+
+            .page-wrapper
+
+                .page__sidebar 
+
+                    nav.page__sidebar-nav
+
+                        p.page__sidebar--selected
+                            span Наборы для ПЦР
+                            i.fa-solid.fa-chevron-down
+
+                        div(style="display: none;").page__sidebar-list
+
+                            a.select-option.selected Публикации
+
+                            a.select-option Новости
+
+                            a.select-option Нормативная документация
+                
+                .page__content
+
+                    .publication-detail__date 20 октября 2022
+
+                    .page-title Тест-системы для диагностики инфекционных заболеваний растений методом ПЦР
+
+                    .publication-detail__img
+                        img(src="assets/images/pub-detail.png", alt="")
+                   
+                    p ООО «АгроДиагностика» разработала и внедрила в практическую работу уникальный комплекс тест-систем на основе полимеразной цепной реакции (ПЦР) для диагностики и идентификации широкого спектра инфекционных заболеваний сельскохозяйственных культур. Для проведения анализа отработаны системы выделения нуклеиновых кислот из растительного материала и подготовки проб для ПЦР. Наборы производятся в двух форматах —на основе технологии FLASH (FLuorescent Amplificationbased Specific Hybridization — специфическая флуоресцентная гибридизация в процессе амплификации) и в формате Real-Time PCR (Rt) (ПЦР в реальном времени).
+
+    section.equipment-inner
+
+        .container 
+
+            .section__nav 
+
+                .section-title Другие новости
+
+                .section__nav-link Все новости
+            
+            .news-items 
+
+                .news-item 
+
+                    .news-item__date 20 октября 2022
+
+                    .news-item__title Болезни растений - открытие нового направления...
+
+                    .news-item__text С радостью сообщаем, что компанией открыто новое направление для диагностики болезней растений...
+                
+                    .button-style.button-style--green Подробнее
+
+                .news-item 
+
+                    .news-item__date 20 октября 2022
+
+                    .news-item__title Наши новинки за лето
+
+                    .news-item__text За весну - лето наша компания подготовила следующие тест-системы.
+                
+                    .button-style.button-style--green Подробнее
+
+            .show-all Все новости

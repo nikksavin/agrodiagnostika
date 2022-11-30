@@ -1,0 +1,89 @@
+.requisites-page {
+    padding-bottom: 50px;
+}
+
+.requisites-content {
+    margin-top: 30px;
+}
+
+.requisites-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+  
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 22px;
+    }
+
+}
+
+
+.requisites-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 373px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 20px;
+    }
+
+}
+
+.requisites-title-sm {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+}
+
+.requisites-text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400!important;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D!important;
+    margin-bottom: 10px;
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.requisites-mixed {
+    display: flex;
+    margin-bottom: 20px;
+    
+    span {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D3D3D;
+    }
+
+    div {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D3D3D;
+        margin-left: 10px;
+    }
+
+}

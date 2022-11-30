@@ -1,0 +1,79 @@
+.distributors-page {
+    padding-bottom: 50px;
+
+    @include breakpoint(md) {
+        padding-bottom: 90px;
+    }
+
+}
+.distributors-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    @include breakpoint(md) {
+        margin-top: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+    }
+
+}
+.distributors-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        width: calc( 100% / 2 - 40px );
+    }
+
+
+}
+.distributors-item__title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #00652D;
+    margin-bottom: 15px;
+
+    @include breakpoint(xl) {
+        max-width: 270px;
+    }
+
+
+}
+.distributors-item__links {
+    display: flex;
+    flex-direction: column;
+}
+.distributors-item__link {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.distributors-item__link-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+}
+.distributors-item__link-text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400!important;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D!important;
+}

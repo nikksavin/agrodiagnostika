@@ -5,6 +5,14 @@
 .page-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
+
+
 
     @include breakpoint(xl) {
         flex-direction: row;
@@ -140,6 +148,11 @@
         color: #3D3D3D;
         margin-bottom: 20px;
     }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+
 
     @include breakpoint(xl) {
         width: calc( 100% - 310px );

@@ -1,0 +1,86 @@
+.about-page {
+    h2 {
+        margin-bottom: 15px;
+    }
+}
+
+
+.about-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  background: #f5f5f5;
+  border-radius: 30px;
+  margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 100px;
+    }
+}
+.about-advantage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+
+    @include breakpoint(md) {
+        width: calc( 100% / 2 - 20px);
+        margin-left: 20px;
+    }
+
+
+}
+.about-advantage__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.about-advantages__title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3d3d3d;
+}
+.about-page__image {
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 40px;
+    }
+
+}
+.about-page__video {
+
+    filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.09));
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    iframe {
+        height: 200px!important;
+
+        @include breakpoint(lg) {
+            height: 550px!important;
+        }
+
+    }
+
+}

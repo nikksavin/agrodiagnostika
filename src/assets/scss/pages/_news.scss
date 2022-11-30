@@ -1,0 +1,17 @@
+.news-page {
+
+
+    .news-item {
+        margin-bottom: 20px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(xl) {
+            margin-bottom: 40px;
+        }
+    }
+
+
+}

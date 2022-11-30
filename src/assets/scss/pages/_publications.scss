@@ -1,0 +1,73 @@
+.publication-page {
+
+    .publications-item {
+        margin-bottom: 20px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(xl) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+}
+
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include breakpoint(lg) {
+        margin-top: 40px;
+    }
+}
+
+.pagination-item {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3D3D3D;
+}
+
+.pagination-item.active {
+    background: #00652D;
+    color: #fff;
+}
+
+.pagination-arrow {
+    background: #F5F5F5;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    i {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #A2A2A2;
+    }
+
+}
+.active {
+}
+.pagination-dots {
+}
+.fa-angle-right {
+}
+.fa-angles-right {
+}
